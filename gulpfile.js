@@ -1,12 +1,21 @@
 'use strict';
 
 var gulp = require('gulp'),
+    gulpSequence = require('gulp-sequence'),
     sass = require('gulp-sass'),
     twig = require('gulp-twig'),
     browserSync = require('browser-sync'),
     svgSprite = require("gulp-svg-sprite"),
     sassVars = require('gulp-sass-vars'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    packageData = require('./package.json');
+
+const { TelegramClient } = require('messaging-api-telegram');
+const client = TelegramClient.connect('505072985:AAH5JLuUioQJUj0p2BzTjXkHEtXnkegB6UI');
+const gitlog = require('gitlog');
+const options = { repo: __dirname, number: 1, fields: [ 'subject', 'authorName'] };
+
+var currentUrl = packageData.url, currentName = packageData.name;
 
 gulp.task('css', function () {
     var variables = {
@@ -25,7 +34,7 @@ gulp.task('css', function () {
 
 gulp.task('css__static', function () {
     var variables = {
-        PathCss: "../"
+        PathCss: "/"+currentName+"/"
     }
     return gulp.src('src/scss/main.scss')
     .pipe(sassVars(variables, { verbose: true }))
@@ -34,8 +43,7 @@ gulp.task('css__static', function () {
         errLogToConsole: true
     }))
     .pipe(autoprefixer('last 4 version'))
-    .pipe(gulp.dest('server/css'))
-    .pipe(browserSync.reload({stream:true}));
+    .pipe(gulp.dest('deploy/css'));
 });
 
 gulp.task('html', function () {
@@ -53,11 +61,10 @@ gulp.task('html__static', function () {
     return gulp.src('src/html/*.twig')
     .pipe(twig({
         data: {
-           linkPath: ''
+           linkPath: "/"+currentName+"/"
         }
     }))
-    .pipe(gulp.dest('server'))
-    .pipe(browserSync.reload({stream:true}));
+    .pipe(gulp.dest('deploy'));
 });
 
 gulp.task('browser-sync', function() {
@@ -100,9 +107,21 @@ gulp.task('svg', function () {
         .pipe(gulp.dest('server/img'))
 });
 
+gulp.task('copy', function () {
+    gulp.src(['server/img/**/*', 'server/css/**/*', 'server/js/**/*'], {
+        base: 'server'
+    }).pipe(gulp.dest('deploy'));
+});
+
+gulp.task('notify', function(){
+    gitlog(options, function(error, commits) {
+        client.sendMessage('-252565154', 'You updated the project "<b>'+currentName+'</b>" \n Website: '+currentUrl+' \n Subject: '+commits[0].subject+' \n Author: '+commits[0].authorName, {parse_mode: 'html'});
+    });
+});
+
 gulp.task('build', ['svg', 'html', 'css']);
 
-gulp.task('build__static', ['svg', 'html__static', 'css__static']);
+gulp.task('build__static', gulpSequence('svg', 'copy', 'html__static', 'css__static'));
 
 gulp.task('default', ['html', 'css', 'browser-sync'], function () {
     gulp.watch("src/scss/*/*.scss", ['css']);
