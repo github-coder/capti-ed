@@ -1,0 +1,84 @@
+{# index.twig #}
+{% extends "base/layout.twig" %}
+
+{% block title %} Higher education | Capti Education {% endblock %}
+
+{% block main %}
+
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Higher education <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar" href="{{linkPath}}">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder active" href="{{linkPath}}higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="{{linkPath}}accommodations.html" class="contents-ed">Accommodations</a></li>
+                        <li><a href="{{linkPath}}content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="{{linkPath}}learning_styles.html" class="contents-ed">Learning Styles</a></li>
+                        <li><a href="{{linkPath}}esl_students.html" class="contents-ed active">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder" href="{{linkPath}}k-12_education.html"> K-12 education</a>
+					<ul class="sidebar-submenu-ed">
+						<li><a href="{{linkPath}}blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="{{linkPath}}computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="{{linkPath}}student_led_instruction.html" class="contents-ed">Student-Led Instruction</a></li>
+						<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="{{linkPath}}inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html" class="contents-ed">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="{{linkPath}}self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
+
+                </div>
+            </section>
+
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">ESL Students</h1>
+					<p>ESL students are making up a larger percentage of college attendees than ever before and have brought ESL teaching strategies to the forefront of education. In order to learn successfully alongside their native English-speaking classmates,some teaching strategies for ESL learners include translation, definitions, and control of speech rate for text-to-speech.</p>
+					<p>Capti Voice includes these ESL learning strategies (translation, definitions, control of speech rate) to help ESL classes keep up with reading assignments while maximizing their understanding. ESL teaching can be challenging for both students and teachers, but Capti allows those students to take control of their education by utilizing tools when they need them. There’s no need to waste time with special ESL lesson plans when the students can use Capti to make the general education lesson plans fit their needs.</p>
+
+					<table class="support-table">
+	                    <thead>
+	                        <tr>
+	                            <th class="support-td-info support-td-info-50">Biggest Challenges</th>
+	                            <th class="support-td-check support-td-check-50">Capti’s Solutions</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">ELL students may struggle with the independent reading assignments expected in a higher ed class</td>
+	                            <td class="support-td-check support-td-check-50">ELL students can use Capti’s context-sensitive translation feature to translate up to 500 characters at a time on their own.</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">It can be difficult to build vocabulary in a natural way to help in future reading and writing assignments</td>
+	                            <td class="support-td-check support-td-check-50">Our Word List feature allows ELL’s to create a unique study list of words attached to a specific track in a playlist. They can write in their own definitions to help them study in a more personalized way</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+
+					<h3>Learn more about "ESL Students":</h3>
+					<p>ELL students face unique challenges in the classroom. This article outlines just a few of hurdles English language learners must overcome to be successful in school. <br><a href="http://www.everythingesl.net/" class="ed-link" target="_block">http://www.everythingesl.net/</a></p>
+					<p>This article goes over five key strategies for ELL teachers to help their students get the most out of their education. <br><a href="https://www.teachingchannel.org/blog/2013/10/25/strategies-for-ell-instruction/" class="ed-link" target="_block">https://www.teachingchannel.org/blog/2013/10/25/strategies-for-ell-instruction/</a></p>
+
+                </div>
+            </section>
+
+        </section>
+    </article>
+</section>
+
+
+{% endblock %}
+

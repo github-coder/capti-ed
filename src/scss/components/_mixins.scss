@@ -119,13 +119,13 @@
   @return mq-px2em(sprite-attr($icon, height));
 }
 
-$sprite: map-get($icons, sprite) !default;
+/* $sprite: map-get($icons, sprite) !default;
 
 %sprite {
     display: inline-block;
     background-image: url(map-get($sprite, svgPath));
     background-size: mq-px2em(map-get($sprite, width)) mq-px2em(map-get($sprite, height));
-}
+} */
 
 @mixin sprite($icon, $type: all) {
     @if $type == all {

@@ -1,28 +1,28 @@
-{# layout.twig #}
+
 
 <!doctype html>
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-{% block head %}
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>{% block title %}{% endblock %}</title>
+	<title> Higher education | Capti Education </title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="robots" content="noindex,nofollow">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="{{linkPath}}favicon.ico">
-	<link rel="apple-touch-icon" href="{{linkPath}}apple-touch-icon.png">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<link href="https://devel.captivoice.com/capti-site/themes/capti/css/style.css?bn1639" rel="stylesheet">
-	<link href="{{linkPath}}css/main.css" rel="stylesheet">
-{% endblock %}
+	<link href="/css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -84,7 +84,60 @@
 		</div>
 	</div>
 
-{% block main %}{% endblock %}
+
+
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Higher education <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar" href="/">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder active" href="/higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="/accommodations.html" class="contents-ed">Accommodations</a></li>
+                        <li><a href="/content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="/learning_styles.html" class="contents-ed">Learning Styles</a></li>
+                        <li><a href="/esl_students.html" class="contents-ed">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder" href="/k-12_education.html"> K-12 education</a>
+					<ul class="sidebar-submenu-ed">
+						<li><a href="/blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="/computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="/student_led_instruction.html" class="contents-ed">Student-Led Instruction</a></li>
+						<li><a href="/capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="/inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="/integrated_classrooms_enl_ell.html" class="contents-ed">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="/self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
+
+                </div>
+            </section>
+
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">Higher Education</h1>
+					<p>Capti Voice works with higher education institutions to provide college students the opportunity to listen to text and learn alongside their peers. By providing this much needed support, Capti enables students to succeed in higher education and beyond. Capti’s text to voice is available online, offline (with our standalone desktop app), and on iOS mobile devices! This allows for a continuous and consistent reading experience at home, in the classroom, and on the go.</p>
+					<p>Unlike standard audio book readers, Capti intelligently processes the words on the page and reads for you so you don’t have to wait for the audiobook version of your favorite book to be released. Not only does this make Capti more versatile (it can read documents as well as books), it’s also much less expensive than buying and downloading various audio texts. Our text to voice software allows users to upload anything from web articles to ebooks to PDF’s and listen to them at their leisure.</p>
+                </div>
+            </section>
+
+        </section>
+    </article>
+</section>
+
+
+
 
 	<div id="navigation-footer">
 	    <div>
@@ -119,7 +172,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-	<script src="{{linkPath}}js/main.js"></script>
+	<script src="/js/main.js"></script>
 
 </body>
 </html>

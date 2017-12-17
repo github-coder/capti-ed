@@ -1,0 +1,64 @@
+{# index.twig #}
+{% extends "base/layout.twig" %}
+
+{% block title %} Higher education | Capti Education {% endblock %}
+
+{% block main %}
+
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Higher education <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar" href="{{linkPath}}">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder" href="{{linkPath}}higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="{{linkPath}}accommodations.html" class="contents-ed">Accommodations</a></li>
+                        <li><a href="{{linkPath}}content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="{{linkPath}}learning_styles.html" class="contents-ed">Learning Styles</a></li>
+                        <li><a href="{{linkPath}}esl_students.html" class="contents-ed">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder active" href="{{linkPath}}k-12_education.html"> K-12 education</a>
+                    <ul class="sidebar-submenu-ed">
+						<li><a href="{{linkPath}}blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="{{linkPath}}computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="{{linkPath}}student_led_instruction.html" class="contents-ed">Student-Led Instruction</a></li>
+						<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="{{linkPath}}inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html" class="contents-ed">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="{{linkPath}}self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
+
+                </div>
+            </section>
+
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">K-12 Education</h1>
+					<p>Capti Voice is a flexible literacy tool designed to help students and teachers of various subjects and populations throughout K-12 make their content more accessible.</p>
+					<p>The supports that are built into Capti help to facilitate differentiation for teachers by allowing students to individualize their reading to fit their needs. Teachers can upload a book from Bookshare or Google Drive into Capti, share it with a group of students, and then each student can read that book using their own font, colors, magnification and voice-over preferences. This makes it easy to tailor each piece of content to the needs of every student. This is especially helpful in settings where reading levels may vary drastically such as inclusion classrooms.</p>
+					<p>Capti is also a great resource for students with moderate to severe disabilities, or students in self-contained classrooms. If you work with a student who relies heavily on a mobile device (i.e., iPad) to complete daily tasks, Capti can help. The high-quality voices available in our text-to-speech voice library allow students to remain engaged while listening to any text. Paired with the speech tracking that follows along with the preferred voice, Capti turns reading into an audio and visual experience.</p>
+					<p>Capti is also a great way to incorporate blended learning into your curriculum. You can take a picture of physical media and allow students to listen to it on their electronic device. Students can also highlight and take notes on any text that they are reading in Capti, which will help them improve computer competency while they practice actively reading and listening.</p>
+					<p>Read more about how Capti can help solve some of the biggest challenges of K-12 education.</p>
+
+                </div>
+            </section>
+
+        </section>
+    </article>
+</section>
+
+
+{% endblock %}
+

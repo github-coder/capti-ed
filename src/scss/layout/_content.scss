@@ -1,2 +1,102 @@
 // Content
 
+.ed {
+	&-overview {
+		padding: 60px 0 40px;
+		&-container {
+			max-width: 800px;
+			margin: auto;
+		}
+		h2 {
+			text-align: center;
+			font-size: 2.5rem;
+			font-weight: 300;
+			margin: 0 0 30px;
+		}
+
+		p {
+			line-height: 180%;
+		}
+
+		.capti--seo__readmore {
+			margin: 40px 0 20px;
+		}
+	}
+	&-link {
+		font-size: 0.75rem;
+		&:after {
+			content: '';
+			display: inline-block;
+			font-family: FontAwesome;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			margin-left:5px;
+		}
+		&:hover, &:focus {
+			&:after {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.block-7 {
+	.block-2-h3 {
+		max-width: 640px;
+		margin: 0 auto 20px;
+		line-height: 150%;
+	}
+	p {
+		max-width: 550px;
+		margin: 15px auto;
+	}
+}
+
+.sidebar-submenu-ed {
+	list-style: none;
+	margin: 0 0 30px;
+	padding-left: 35px;
+	li {
+		margin-bottom: 5px;
+		a {
+			position: relative;
+			display: block;
+			padding: 5px 10px;
+			font-size: 0.9375rem;
+			font-weight: 400;
+			&:hover, &:focus {
+				text-decoration: none;
+				color: #555;
+			}
+			&.active {
+				font-weight: 700;
+				color: #555;
+			}
+			&:before {
+				content: '';
+				display: inline-block;
+				font-family: FontAwesome;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 30px;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				position: absolute;
+				top: 0;
+				left: -15px;
+			}
+		}
+	}
+	&-middle {
+		margin-bottom: 15px
+	}
+}
+
+.sidebar-ed {
+	&-noborder {
+		border-bottom:0;
+	}
+	&-topborder.contents:last-of-type {
+		border-top: 1px solid #ddd;
+	}
+}

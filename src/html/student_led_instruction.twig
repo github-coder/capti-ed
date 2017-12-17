@@ -1,0 +1,90 @@
+{# index.twig #}
+{% extends "base/layout.twig" %}
+
+{% block title %} Higher education | Capti Education {% endblock %}
+
+{% block main %}
+
+<meta name="keywords" content="student-led instruction, student-led learning, student-led middle school, student-led high school, student-led learning, student-led learning strategies">
+
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Higher education <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar" href="{{linkPath}}">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder" href="{{linkPath}}higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="{{linkPath}}accommodations.html" class="contents-ed">Accommodations</a></li>
+                        <li><a href="{{linkPath}}content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="{{linkPath}}learning_styles.html" class="contents-ed">Learning Styles</a></li>
+                        <li><a href="{{linkPath}}esl_students.html" class="contents-ed">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder active" href="{{linkPath}}k-12_education.html"> K-12 education</a>
+					<ul class="sidebar-submenu-ed">
+						<li><a href="{{linkPath}}blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="{{linkPath}}computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="{{linkPath}}student_led_instruction.html" class="contents-ed active">Student-Led Instruction</a></li>
+						<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="{{linkPath}}inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html" class="contents-ed">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="{{linkPath}}self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
+
+                </div>
+            </section>
+
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">Student-led Instruction</h1>
+					<p>A common goal for many teachers is to facilitate a student-led learning environment. The more the students are engaged in the material the better the students’ overall understanding of the material. By encouraging students teaching each other, they have the opportunity to explain what they know better than with a purely instructor-led course. In order for this to occur the lessons should be adapted to the needs of the individuals, and the structure and pacing should allow for student reflection and closure.</p>
+
+					<img class="big img-center" src="{{linkPath}}img/student_led_instruction.jpg" alt="students teaching">
+
+					<table class="support-table">
+	                    <thead>
+	                        <tr>
+	                            <th class="support-td-info support-td-info-50">Biggest Challenges</th>
+	                            <th class="support-td-check support-td-check-50">Capti’s Solutions</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Encouraging students to work independently</td>
+	                            <td class="support-td-check support-td-check-50">Capti’s built-in supports promote independent work despite learning disabilities. [Learn more about how Capti helps support student-led instruction | Student-Led Instruction]</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Getting all of your students the materials they need every day</td>
+	                            <td class="support-td-check support-td-check-50">It’s simple to use Capti to distribute materials to any number of students and facilitate a student-led middle school/student-led highschool; just add content from various integrated sources to a playlist and share that playlist with your students with a few clicks.</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Differentiating Instruction</td>
+	                            <td class="support-td-check support-td-check-50">Easily individualize content to each student’s needs using Capti’s text-to-speech, visual speech-tracking and more. [Learn more about how Capti helps support differentiated instruction | Differentiated Instruction]</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+
+					<h3>Learn more about student-led:</h3>
+					<p>John McCarthy explains the importance of student-led learning strategies in the classroom. <br><a href="https://www.edutopia.org/blog/student-centered-learning-starts-with-teacher-john-mccarthy" class="ed-link" target="_block">https://www.edutopia.org/blog/student-centered-learning-starts-with-teacher-john-mccarthy</a></p>
+
+                </div>
+            </section>
+
+        </section>
+    </article>
+</section>
+
+
+{% endblock %}
+

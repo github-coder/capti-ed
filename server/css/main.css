@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* $sprite: map-get($icons, sprite) !default;
+
+%sprite {
+    display: inline-block;
+    background-image: url(map-get($sprite, svgPath));
+    background-size: mq-px2em(map-get($sprite, width)) mq-px2em(map-get($sprite, height));
+} */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.hidden {
+  display: none; }
+
+.ed-overview {
+  padding: 60px 0 40px; }
+  .ed-overview-container {
+    max-width: 800px;
+    margin: auto; }
+  .ed-overview h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0 0 30px; }
+  .ed-overview p {
+    line-height: 180%; }
+  .ed-overview .capti--seo__readmore {
+    margin: 40px 0 20px; }
+
+.ed-link {
+  font-size: 0.75rem; }
+  .ed-link:after {
+    content: '';
+    display: inline-block;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 5px; }
+  .ed-link:hover:after, .ed-link:focus:after {
+    text-decoration: none; }
+
+.block-7 .block-2-h3 {
+  max-width: 640px;
+  margin: 0 auto 20px;
+  line-height: 150%; }
+
+.block-7 p {
+  max-width: 550px;
+  margin: 15px auto; }
+
+.sidebar-submenu-ed {
+  list-style: none;
+  margin: 0 0 30px;
+  padding-left: 35px; }
+  .sidebar-submenu-ed li {
+    margin-bottom: 5px; }
+    .sidebar-submenu-ed li a {
+      position: relative;
+      display: block;
+      padding: 5px 10px;
+      font-size: 0.9375rem;
+      font-weight: 400; }
+      .sidebar-submenu-ed li a:hover, .sidebar-submenu-ed li a:focus {
+        text-decoration: none;
+        color: #555; }
+      .sidebar-submenu-ed li a.active {
+        font-weight: 700;
+        color: #555; }
+      .sidebar-submenu-ed li a:before {
+        content: '';
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        top: 0;
+        left: -15px; }
+  .sidebar-submenu-ed-middle {
+    margin-bottom: 15px; }
+
+.sidebar-ed-noborder {
+  border-bottom: 0; }
+
+.sidebar-ed-topborder.contents:last-of-type {
+  border-top: 1px solid #ddd; }

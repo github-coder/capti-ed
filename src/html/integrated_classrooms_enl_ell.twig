@@ -1,0 +1,89 @@
+{# index.twig #}
+{% extends "base/layout.twig" %}
+
+{% block title %} Higher education | Capti Education {% endblock %}
+
+{% block main %}
+
+<meta name="keywords" content="integrated classroom, integrated classroom special education, integrated classroom special needs, ELL, ENL, english language learner, english as a new language, integrated classroom ideas, integrated classroom strategies">
+
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Higher education <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar" href="{{linkPath}}">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder" href="{{linkPath}}higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="{{linkPath}}accommodations.html" class="contents-ed">Accommodations</a></li>
+                        <li><a href="{{linkPath}}content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="{{linkPath}}learning_styles.html" class="contents-ed">Learning Styles</a></li>
+                        <li><a href="{{linkPath}}esl_students.html" class="contents-ed">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder active" href="{{linkPath}}k-12_education.html"> K-12 education</a>
+					<ul class="sidebar-submenu-ed">
+						<li><a href="{{linkPath}}blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="{{linkPath}}computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="{{linkPath}}student_led_instruction.html" class="contents-ed">Student-Led Instruction</a></li>
+						<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="{{linkPath}}inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html" class="contents-ed active">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="{{linkPath}}self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
+
+                </div>
+            </section>
+
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">Integrated Classroom (ELL/ENL)</h1>
+					<p>Integrated classrooms for the ELL/ENL (English language learner/English as a new language) student populations generally consist of a special education teacher and a general education teacher.  Both teachers collaborate in order to provide age-appropriate instruction in an English language mainstream classroom.  The teachers work together to modify and accommodate the instruction in order to meet the needs of their native English-speakers as well as bilingual students. The underlying responsibility of the teachers in an integrated classroom is to make sure each student has access to the general education curriculum and that their special needs are accommodated.</p>
+
+					<img class="big img-center" src="{{linkPath}}img/integrated_classrooms_enl_ell.jpg" alt="esl students, bilingual students, ell students">
+
+					<table class="support-table">
+	                    <thead>
+	                        <tr>
+	                            <th class="support-td-info support-td-info-50">Biggest Challenges</th>
+	                            <th class="support-td-check support-td-check-50">Capti’s Solutions</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Lack of resources to overcome such as language barriers</td>
+	                            <td class="support-td-check support-td-check-50">Browse Bookshare’s library for foreign language editions right in Capti or quickly extract articles from a foreign language website.</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Difficult to differentiate content for foreign language students</td>
+	                            <td class="support-td-check support-td-check-50">Capti’s supports are multi-lingual; allow students to translate any text up to 500 characters at a time, or provide them with a high-quality text-to-speech voice in their native language.</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Low English proficiency levels that are present in the classroom</td>
+	                            <td class="support-td-check support-td-check-50">Use Capti’s Word Challenge game as an integrated classroom strategy so that ESL students can practice English vocabulary in the student’s native language</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+
+					<h3>Learn more about Integrated Classroom:</h3>
+					<p>The Center for American Progress focuses on the unique needs of ELL students in regard to general education techniques as well as the integrated classroom ideas.<br><a href="http://files.eric.ed.gov/fulltext/ED535608.pdf" class="ed-link" target="_block">http://files.eric.ed.gov/fulltext/ED535608.pdf</a></p>
+                </div>
+            </section>
+
+        </section>
+    </article>
+</section>
+
+
+{% endblock %}
+

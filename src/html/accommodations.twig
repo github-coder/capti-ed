@@ -1,0 +1,89 @@
+{# index.twig #}
+{% extends "base/layout.twig" %}
+
+{% block title %} Higher education | Capti Education {% endblock %}
+
+{% block main %}
+
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Higher education <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar" href="{{linkPath}}">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder active" href="{{linkPath}}higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="{{linkPath}}accommodations.html" class="contents-ed active">Accommodations</a></li>
+                        <li><a href="{{linkPath}}content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="{{linkPath}}learning_styles.html" class="contents-ed">Learning Styles</a></li>
+                        <li><a href="{{linkPath}}esl_students.html" class="contents-ed">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder" href="{{linkPath}}k-12_education.html"> K-12 education</a>
+					<ul class="sidebar-submenu-ed">
+						<li><a href="{{linkPath}}blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="{{linkPath}}computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="{{linkPath}}student_led_instruction.html" class="contents-ed">Student-Led Instruction</a></li>
+						<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="{{linkPath}}inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html" class="contents-ed">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="{{linkPath}}self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
+
+                </div>
+            </section>
+
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">Accommodations</h1>
+					<p>Many students entering college or university require accommodations and modifications to get the most out of their academic experience. There are many different types of accommodations for students with learning disabilities that range from special software and platforms to hardware and switch systems. What important to note about accommodations is that they don’t change the actual content or performance expectations, just the way that the information is presented. (McLaughlin 38)</p>
+					<p>Capti Voice includes modifications for students such as having the option for a larger print size, increasing contrast of the words on a page, and using text-to-speech. Capti goes beyond special education accommodations by not only offering in-app modifications, but by integrating with Bookshare. Capti also grants qualifying students the opportunity to read general education books on their own and maintain their academic independence.</p>
+
+					<table class="support-table">
+	                    <thead>
+	                        <tr>
+	                            <th class="support-td-info support-td-info-50">Biggest Challenges</th>
+	                            <th class="support-td-check support-td-check-50">Capti’s Solutions</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Students with special needs requiring font/color adjustment in order to read an assignment accurately</td>
+	                            <td class="support-td-check support-td-check-50">Capti offers in-app modifications that can be customized by the student to best fit their needs.</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">More time is needed for struggling readers in order to increase comprehension</td>
+	                            <td class="support-td-check support-td-check-50">Capti’s text-to-speech capability allows the student to listen to what they want to read and increases comprehension and independence while reading</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Students may require read-to accommodations during an assignment or assessment.</td>
+	                            <td class="support-td-check support-td-check-50">Capti’s Assessments feature allows teachers to upload the test attached to a playlist so students can listen to their reference materials, enter their answers into Capti, and even listen to their own answers to go over them.</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+
+					<h3>Learn more about accommodations:</h3>
+
+					<p>This article outlines how special education accommodations are an integral part of creating a successful IEP for your student. <br><a href="http://www.smartkidswithld.org/getting-help/the-abcs-of-ieps/iep-planning-accommodations-modifications/" class="ed-link" target="_block">http://www.smartkidswithld.org/getting-help/the-abcs-of-ieps/iep-planning-accommodations-modifications/</a></p>
+					<p>It’s important to know the difference between accommodations, and modifications. This article goes into depth about which method may be the best choice for you as an educator. <br><a href="http://education.jhu.edu/PDhttp:/education.jhu.edu/" class="ed-link" target="_block">http://education.jhu.edu/PDhttp:/education.jhu.edu/</a></p>
+
+                </div>
+            </section>
+
+        </section>
+    </article>
+</section>
+
+
+{% endblock %}
+

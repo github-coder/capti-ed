@@ -1,0 +1,89 @@
+{# index.twig #}
+{% extends "base/layout.twig" %}
+
+{% block title %} Higher education | Capti Education {% endblock %}
+
+{% block main %}
+
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Higher education <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar" href="{{linkPath}}">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder active" href="{{linkPath}}higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="{{linkPath}}accommodations.html" class="contents-ed">Accommodations</a></li>
+                        <li><a href="{{linkPath}}content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="{{linkPath}}learning_styles.html" class="contents-ed active">Learning Styles</a></li>
+                        <li><a href="{{linkPath}}esl_students.html" class="contents-ed">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder" href="{{linkPath}}k-12_education.html"> K-12 education</a>
+					<ul class="sidebar-submenu-ed">
+						<li><a href="{{linkPath}}blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="{{linkPath}}computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="{{linkPath}}student_led_instruction.html" class="contents-ed">Student-Led Instruction</a></li>
+						<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="{{linkPath}}inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html" class="contents-ed">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="{{linkPath}}self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
+
+                </div>
+            </section>
+
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">Learning Styles</h1>
+
+					<p>Every student has their own unique learning style. The three most common types are visual learners (one who learns by observing), auditory learners (one who learns by listening), and kinesthetic learners (one who learns by doing). Teaching to different types of learning styles can provide a challenge to teachers in inclusive settings as each student responds to different methods of teaching.</p>
+					<p>Capti Voice is a unique product in that it appeals to all three types of different learning styles. Auditory learners will gravitate toward the high-quality text-to-speech voices we offer to narrate their content. Those who have a more visual learning style can turn on the text-tracking feature to see the words highlighted along as it’s being narrated to make the necessary connection between the spoken words visually. Even students who fall into the kinesthetic learning style category will love Capti because they can highlight and annotate their content and become fully engaged in their assignments.</p>
+
+					<table class="support-table">
+	                    <thead>
+	                        <tr>
+	                            <th class="support-td-info support-td-info-50">Biggest Challenges</th>
+	                            <th class="support-td-check support-td-check-50">Capti’s Solutions</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Visual learners might struggle to comprehend while listening to a teacher read a passage to them</td>
+	                            <td class="support-td-check support-td-check-50">In Capti, they can turn on the text-tracking feature so the words are highlighted as they’re being read so visual learners can make the connection between what they hear and what they see.</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Students who learn by listening may have trouble reading on their own efficiently.</td>
+	                            <td class="support-td-check support-td-check-50">Capti’s engaging, high quality text-to-speech voices allow the student to listen to their reading assignments.</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="support-td-info support-td-info-50">Kinesthetic learners may become disengaged while trying to read along during a lecture.</td>
+	                            <td class="support-td-check support-td-check-50">Capti’s highlighting and annotating features allow kinesthetic learners to take notes right in the text to increase their overall engagement. They can also use Capti on their iOS mobile device to listen to tracks on the go.</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+
+					<h3>Learn more about "Learning Styles":</h3>
+
+					<p>This article goes over the diversified learning styles that exist in the classroom and what accommodations teachers can provide for their different learners. <br><a href="https://ctfd.sfsu.edu/content/learning-styles" class="ed-link" target="_block">https://ctfd.sfsu.edu/content/learning-styles</a></p>
+					<p>By adapting to each unique learning style, teachers can help encourage each student’s success in the classroom. This article outlines the importance of understanding the unique nature of individual learning. <br><a href="https://www.thoughtco.com/knowing-your-learning-style-1857098" class="ed-link" target="_block">https://www.thoughtco.com/knowing-your-learning-style-1857098</a></p>
+                </div>
+            </section>
+
+        </section>
+    </article>
+</section>
+
+
+{% endblock %}
+
