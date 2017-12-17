@@ -3,11 +3,11 @@
 Pages:
 - OVERVIEW
 - HIGHER EDUCATION
-- K-12 EDUCATION
 	- Accommodations
 	- Content Distribution
 	- Learning Styles
 	- ESL Students
+- K-12 EDUCATION
 	- Blended Learning
 	- Computer Competency
 	- Student-Led Instruction
