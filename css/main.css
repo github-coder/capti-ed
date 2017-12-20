@@ -25,7 +25,46 @@
   .ed-overview p {
     line-height: 180%; }
   .ed-overview .capti--seo__readmore {
-    margin: 40px 0 20px; }
+    margin: 40px 0 20px;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+    .ed-overview .capti--seo__readmore-list {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      font-size: 1.0625rem;
+      margin: 0 0 0 4%; }
+      @media (max-width: 980px) {
+        .ed-overview .capti--seo__readmore-list {
+          margin: 10px 0 0; } }
+      @media (max-width: 600px) {
+        .ed-overview .capti--seo__readmore-list {
+          display: block; } }
+      .ed-overview .capti--seo__readmore-list a {
+        white-space: nowrap; }
+        @media (max-width: 479px) {
+          .ed-overview .capti--seo__readmore-list a {
+            white-space: normal; } }
+      .ed-overview .capti--seo__readmore-list span {
+        margin: 0 30px;
+        color: rgba(51, 51, 51, 0.3); }
+        @media (max-width: 600px) {
+          .ed-overview .capti--seo__readmore-list span {
+            opacity: 0;
+            margin: 10px 0; } }
+      .ed-overview .capti--seo__readmore-list .fa {
+        font-size: 15px;
+        margin-right: 7px; }
+      .ed-overview .capti--seo__readmore-list ul {
+        margin-top: 5px;
+        padding-left: 20px; }
+        .ed-overview .capti--seo__readmore-list ul a {
+          font-size: 0.9375rem; }
+    .ed-overview .capti--seo__readmore-link > a {
+      font-weight: bold; }
 
 .ed-link {
   font-size: 0.75rem; }
