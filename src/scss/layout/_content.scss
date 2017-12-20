@@ -20,6 +20,54 @@
 
 		.capti--seo__readmore {
 			margin: 40px 0 20px;
+
+			align-items: flex-start;
+
+			&-list {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				font-size: 1.0625rem;
+				margin: 0 0 0 4%;
+				@media(max-width: 980px) {
+					margin:10px 0 0;
+				}
+				@media(max-width: 600px) {
+					display: block;
+				}
+				a {
+					white-space: nowrap;
+					@media(max-width: 479px) {
+						white-space: normal;
+					}
+				}
+				span {
+					margin: 0 30px;
+					color: rgba(#333, .3);
+					@media(max-width: 600px) {
+						opacity: 0;
+						margin: 10px 0;
+					}
+				}
+				.fa {
+					font-size: 15px;
+					margin-right: 7px;
+				}
+
+				ul {
+					margin-top: 5px;
+					padding-left: 20px;
+					a {
+						font-size: 0.9375rem;
+					}
+				}
+			}
+			&-link {
+				> a {
+					font-weight: bold;
+				}
+			}
 		}
 	}
 	&-link {
