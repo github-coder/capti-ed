@@ -5,93 +5,56 @@
 
 {% block main %}
 
-<div class="block-1">
-	<div class="container">
-		<div class="block-1-logo"></div>
-		<h1 class="block-1-h1">For Education</h1>
-		<a href="#signup" class="block-1-button">Start using capti now <i class="fa fa-arrow-right"></i></a>
-		<div class="block-1-icons"><i class="fa fa-windows"></i> <i class="fa fa-apple"></i> <span class="icon-ios">iOS</span></div>
-	</div>
-</div>
+<section class="content support-container">
+    <article class="container">
+        <h2 class="content-header content-header-support-1">Capti Education</h2>
+        <section class="row support-background">
+            <section class="col-xs-12 col-sm-3 support-navigation">
+                <style>
+                    @media(min-width:768px) {
+                        .sideblock-mobile-toggle,
+                        .sideblock-mobile-toggle+label {
+                            display: none
+                        }
+                    }
+                </style>
+                <input type="checkbox" id="sideblock-mobile-toggle" class="sideblock-mobile-toggle" />
+                <label for="sideblock-mobile-toggle">Overview <i class="fa fa-angle-down"></i></label>
+                <div class="sideblock">
+                    <a class="contents sidebar active" href="{{linkPath}}">Overview</a>
+                    <a class="contents sidebar sidebar-ed-noborder" href="{{linkPath}}higher_education.html"> Higher education</a>
+                    <ul class="sidebar-submenu-ed sidebar-submenu-ed-middle">
+                        <li><a href="{{linkPath}}accommodations.html" class="contents-ed">Accommodations</a></li>
+                        <li><a href="{{linkPath}}content_distribution.html" class="contents-ed">Content Distribution</a></li>
+                        <li><a href="{{linkPath}}learning_styles.html" class="contents-ed">Learning Styles</a></li>
+                        <li><a href="{{linkPath}}esl_students.html" class="contents-ed">ESL Students</a></li>
+                    </ul>
+                    <a class="contents sidebar sidebar-ed-topborder" href="{{linkPath}}k-12_education.html"> K-12 education</a>
+					<ul class="sidebar-submenu-ed">
+						<li><a href="{{linkPath}}blended_learning.html" class="contents-ed">Blended Learning</a></li>
+						<li><a href="{{linkPath}}computer_competency.html" class="contents-ed">Computer Competency</a></li>
+						<li><a href="{{linkPath}}student_led_instruction.html" class="contents-ed">Student-Led Instruction</a></li>
+						<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html" class="contents-ed">Differentiated Instruction</a></li>
+						<li><a href="{{linkPath}}inclusive_classrooms.html" class="contents-ed">Inclusive Classroom</a></li>
+						<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html" class="contents-ed">Integrated Classroom (ELL/ENL)</a></li>
+						<li><a href="{{linkPath}}self_contained_classroom.html" class="contents-ed">Self-Contained Classroom</a></li>
+					</ul>
 
+                </div>
+            </section>
 
-<div class="ed-overview">
-	<div class="container">
-		<div class="ed-overview-container">
-			<h2>Overview</h2>
-			<p>Capti Voice is a text-to-speech literacy tool designed to convert text to audio for a more accessible reading experience for its users. Currently Capti is being used in both K-12 and higher education settings. With its ability to read text-to-speech online as well as offline (through our standalone desktop app), Capti is the only TTS tool to work seamlessly across platforms and devices. By providing a free text-to-speech tool in the basic, individual account, it makes PDF’s, DAISY, EPUB, and a variety of other text formats more accessible to any user.</p>
-			<p>Capti’s focus on education makes it a wonderful text-to-speech program for both students and teachers. Its specialized educational features include OCR and Assignments, which allows a teacher or administrator to create a test right in Capti and attach it to a playlist for easy access to references. It’s easy to get in touch with an Outreach Manager to see a free demo and to discuss options for incorporating Capti Voice into your school!</p>
+            <section class="support col-xs-12 col-sm-9">
+                <div class="bigblock cf">
+                    <h1 class="content-header content-header-support-2">Overview</h1>
+					<p>Capti Voice is a text-to-speech literacy tool designed to convert text to audio for a more accessible reading experience for its users. Currently Capti is being used in both K-12 and higher education settings. With its ability to read text-to-speech online as well as offline (through our standalone desktop app), Capti is the only TTS tool to work seamlessly across platforms and devices. By providing a free text-to-speech tool in the basic, individual account, it makes PDF’s, DAISY, EPUB, and a variety of other text formats more accessible to any user.</p>
+					<p>Capti’s focus on education makes it a wonderful text-to-speech program for both students and teachers. Its specialized educational features include OCR and Assignments, which allows a teacher or administrator to create a test right in Capti and attach it to a playlist for easy access to references. It’s easy to get in touch with an Outreach Manager to see a free demo and to discuss options for incorporating Capti Voice into your school!</p>
+                </div>
+            </section>
 
-			<div class="capti--seo__readmore">
-				<h3>Read more</h3>
-				<div class="capti--seo__readmore-list">
-					<div class="capti--seo__readmore-link">
-						<a href="{{linkPath}}higher_education.html"><i class="fa fa-book"></i>Higher education</a>
-	                    <ul>
-	                        <li><a href="{{linkPath}}accommodations.html"><i class="fa fa-book"></i>Accommodations</a></li>
-	                        <li><a href="{{linkPath}}content_distribution.html"><i class="fa fa-book"></i>Content Distribution</a></li>
-	                        <li><a href="{{linkPath}}learning_styles.html"><i class="fa fa-book"></i>Learning Styles</a></li>
-	                        <li><a href="{{linkPath}}esl_students.html"><i class="fa fa-book"></i>ESL Students</a></li>
-	                    </ul>
-					</div>
-					<span>|</span>
-					<div class="capti--seo__readmore-link">
-						<a href="{{linkPath}}k-12_education.html"><i class="fa fa-book"></i>K-12 education</a>	
-						<ul>
-							<li><a href="{{linkPath}}blended_learning.html"><i class="fa fa-book"></i>Blended Learning</a></li>
-							<li><a href="{{linkPath}}computer_competency.html"><i class="fa fa-book"></i>Computer Competency</a></li>
-							<li><a href="{{linkPath}}student_led_instruction.html"><i class="fa fa-book"></i>Student-Led Instruction</a></li>
-							<li><a href="{{linkPath}}capti_voice_makes_differentiated_instruction.html"><i class="fa fa-book"></i>Differentiated Instruction</a></li>
-							<li><a href="{{linkPath}}inclusive_classrooms.html"><i class="fa fa-book"></i>Inclusive Classroom</a></li>
-							<li><a href="{{linkPath}}integrated_classrooms_enl_ell.html"><i class="fa fa-book"></i>Integrated Classroom (ELL/ENL)</a></li>
-							<li><a href="{{linkPath}}self_contained_classroom.html"><i class="fa fa-book"></i>Self-Contained Classroom</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+        </section>
+    </article>
+</section>
 
-
-<div class="block-6">
-	<div class="container">
-		<h2 class="block-6-h2 block-h2">What Do Experts Say?</h2>
-		<ul class="block-6-testimonials clearfix">
-			<li>
-				<div class="block-6-testimonials-comment">Capti Voice has provided the East Hampton School District with a viable solution for students with disabilities, ENL students, and students struggling with reading comprehension. The flexibility of the software is unparalleled by any other product we have reviewed.</div>
-				<div class="block-6-testimonials-persona">
-					<div class="block-6-testimonials-pic"><img src="https://devel.captivoice.com/capti-site/themes/capti/images/landing/photo-1.jpg" alt=""></div>
-					<div class="block-6-testimonials-who">
-						<div class="block-6-testimonials-name">Robert M. Hagan, Ed.D.</div>
-						<div class="block-6-testimonials-career">Director of Learning Technology and Instruction,</br> East Hampton School District</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="block-6-testimonials-comment">Capti Voice is bringing instruction into the 21st century by enabling students to listen to their reading materials anywhere on a variety of devices. What makes Capti especially appealing to educational institutions is its wide applicability for special ed., ESL, and general ed. students.</div>
-				<div class="block-6-testimonials-persona">
-					<div class="block-6-testimonials-pic"><img src="https://devel.captivoice.com/capti-site/themes/capti/images/landing/photo-2.jpg" alt=""></div>
-					<div class="block-6-testimonials-who">
-						<div class="block-6-testimonials-name">Michael Espina</div>
-						<div class="block-6-testimonials-career">CEO, SchoolSource Technologies LLC</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</div>
-
-<div class="block-7">
-	<div class="container">
-		<h3 class="block-2-h3 block-h3">Contact us at info@captivoice.com to start a free trial of Capti for organizations and obtain a quote</h3>
-			<div class="features-line"></div>
-
-                      <p>Capti is fully accessible. You can download our voluntary product accessibility self-evaluation (VPAT) here</p>
-		<a href="https://www.captivoice.com/capti-fileserv/download/VPAT.pdf" class="block-7-button">Capti Voice VPAT<i class="fa fa-arrow-right"></i></a>
-
-	</div>
-</div>
 
 {% endblock %}
 
